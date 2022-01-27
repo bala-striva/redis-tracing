@@ -1,0 +1,11 @@
+logging:
+  level:
+    root: debug
+
+spring:
+#  sleuth:
+#    redis:
+#      enabled: false
+
+  redis:
+    host: redis

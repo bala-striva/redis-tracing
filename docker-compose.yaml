@@ -1,0 +1,18 @@
+version: '2'
+
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  redis:
+    image: 'bitnami/redis:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    networks:
+      - app-tier
+
+  redis-tracing:
+    image: 'redis-tracing:0.0.1-SNAPSHOT'
+    networks:
+      - app-tier
