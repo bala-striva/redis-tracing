@@ -10,10 +10,12 @@ sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
 }
 
 ext {
-	set('springCloudVersion', "2021.0.0") // 2020.0.5, 2021.0.0
+	set('springCloudVersion', "2021.0.1-SNAPSHOT") // 2020.0.5, 2021.0.0
 }
 
 // 6.1.6-RELEASE
